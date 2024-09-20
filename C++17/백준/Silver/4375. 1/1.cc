@@ -16,7 +16,7 @@ int main()
 				break;
 			}
 			else {
-				num = (num % n) * 10 + 1;
+				num = (num * 10 + 1) % n;
 				ans++;
 			}
 		}
