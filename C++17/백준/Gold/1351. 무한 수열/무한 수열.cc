@@ -21,10 +21,8 @@ int main()
 
 	cin >> N >> P >> Q;
 	um[0] = 1;
-	if (N == 0)
-		cout << "1";
-	else
-		cout << dp(N / P) + dp(N / Q);
+
+	cout << dp(N);
 
 	return 0;
 }
