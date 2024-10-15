@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-int arr[1002];
+int arr[500002];
 int main()
 {
 	ios_base::sync_with_stdio(false);
