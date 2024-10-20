@@ -9,8 +9,6 @@ int main()
 	cin.tie(0);
 
 	string A, B; cin >> A >> B;
-	if (A.size() < B.size())
-		swap(A, B);
 
 	long long ans = 0;
 	for (auto& b : B) {
