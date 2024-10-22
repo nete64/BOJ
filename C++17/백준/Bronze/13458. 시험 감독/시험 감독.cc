@@ -20,8 +20,7 @@ int main()
 		A[i] -= B;
 		ans++;
 		if (A[i] < 0) continue;
-		if (A[i] % C > 0) ans += A[i] / C + 1;
-		else ans += A[i] / C;
+		ans += ceil((double)A[i] / C);
 	}
 	cout << ans;
 	return 0;
