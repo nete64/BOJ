@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-char c[9999][9999];
+char c[398][398];
 int main()
 {
     ios_base::sync_with_stdio(false);
