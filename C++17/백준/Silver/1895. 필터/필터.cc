@@ -16,6 +16,7 @@ int main()
             cin >> arr[i][j];
     int T; cin >> T;
 
+    int ans = 0;
     vector<int> f;
     for (int m = 0; m + 2 < R; m++) {
         for (int i = 0; i + 2 < C; i++) {
@@ -24,14 +25,10 @@ int main()
                 for (int k = 0; k < 3; k++)
                     v.push_back(arr[m + j][i + k]);
             sort(v.begin(), v.end());
-            f.push_back(v[v.size() / 2]);
+            if (v[v.size() / 2] >= T)
+                ans++;
         }
     }
-
-    int ans = 0;
-    for (auto &e : f)
-        if (e >= T)
-            ans++;
     cout << ans;
 	return 0;
 }
