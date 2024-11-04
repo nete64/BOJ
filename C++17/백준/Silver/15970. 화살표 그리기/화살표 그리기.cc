@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-vector<int> v[1001];
+vector<int> v[5001];
 int main()
 {
 	ios_base::sync_with_stdio(false);
