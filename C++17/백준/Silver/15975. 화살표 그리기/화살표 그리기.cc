@@ -3,8 +3,9 @@
 #include <cmath>
 #include <algorithm>
 using namespace std;
+using ll = long long;
 
-vector<int> v[100001];
+vector<ll> v[100001];
 int main()
 {
 	ios_base::sync_with_stdio(false);
@@ -12,13 +13,13 @@ int main()
     
 	int N; cin >> N;
 	for (int i = 1; i <= N; i++) {
-		int x, y; cin >> x >> y;
+		ll x, y; cin >> x >> y;
 		v[y].push_back(x);
 	}
 	for (int i = 1; i <= N; i++)
 		sort(v[i].begin(), v[i].end());
 	
-	int ans = 0;
+	ll ans = 0;
 	for (int i = 1; i <= N; i++) {
 		if (v[i].size() == 1) continue;
 
