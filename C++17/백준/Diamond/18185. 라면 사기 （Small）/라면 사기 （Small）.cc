@@ -16,7 +16,7 @@ int main()
     for (int i = 0; i < N; i++) {
         if (i - 1 >= 0 && arr[i - 1])
             i--;
-            
+
         if (i + 2 < N && arr[i] && arr[i + 1] && arr[i + 2]) {
             if (arr[i + 1] <= arr[i + 2]) {
                 int mn = min({arr[i], arr[i + 1], arr[i + 2]});
@@ -25,9 +25,10 @@ int main()
                 arr[i + 1] -= mn;
                 arr[i + 2] -= mn;
             } else {
-                ans += 5;
-                arr[i]--;
-                arr[i + 1]--;
+                int mn = min({arr[i], arr[i + 1] - arr[i + 2]});
+                ans += mn * 5;
+                arr[i] -= mn;
+                arr[i + 1] -= mn;
             }
         } else if (i + 1 < N && arr[i] && arr[i + 1]) {
             int mn = min({arr[i], arr[i + 1]});
