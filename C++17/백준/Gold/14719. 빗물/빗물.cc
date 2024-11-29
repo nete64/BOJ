@@ -27,12 +27,9 @@ int main()
                 }
                 j = e;
             }
-            if (e > W) continue;
-            if (s == 1) continue;
+            if (e > W || s == 1) continue;
             for (int k = s; k < e; k++) {
                 arr[H - i + 1][k] = 2;
-                // cout << i << " & " << "s e " << s << " " << e << "\n";
-                // ans++;
             }
         }
     }
@@ -41,9 +38,7 @@ int main()
         for (int j = 0; j <= W + 1; j++) {
             if (arr[i][j] == 2)
                 ans++;
-            //cout << arr[i][j] << " ";
         }
-        //cout << "\n";
     }
     cout << ans;
     return 0;
