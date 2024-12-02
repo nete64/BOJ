@@ -12,17 +12,11 @@ int main()
     for (int i = 0; i < N; i++)
         cin >> T[i] >> P[i];
     
-    for (int i = 0; i < N + 1; i++) {
-        for (int j = i - 1; j >= 0; j--) {
-            if (i >= j + T[j]) {
-                dp[i] = max(dp[i], dp[j] + P[j]);
-            }
-        }
-    }
-
-    int ans = 0;
     for (int i = 0; i < N + 1; i++)
-        ans = max(ans, dp[i]);
-    cout << ans;
+        for (int j = i - 1; j >= 0; j--)
+            if (i >= j + T[j])
+                dp[i] = max(dp[i], dp[j] + P[j]);
+    
+    cout << dp[N];
     return 0;
 }
