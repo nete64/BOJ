@@ -3,18 +3,15 @@
 using namespace std;
 
 int w[50];
-bool b[50];
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     
     int N, M, mx = -1e9; cin >> N >> M;
-    for (int i = 1; i <= N; i++) {
-        for (int j = 1; j <= M; j++) {
+    for (int i = 1; i <= N; i++)
+        for (int j = 1; j <= M; j++)
             w[i + j]++;
-        }
-    }
 
     for (int i = 1; i < 50; i++)
         mx = max(mx, w[i]);
