@@ -25,11 +25,7 @@ int main()
     }
     for (int i = 1; i < 50; i++)
         if (mx == w[i])
-            b[i] = true;
-
-    for (int i = 1; i < 50; i++)
-        if (b[i])
             cout << i << "\n";
-            
+
     return 0;
 }
