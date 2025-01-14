@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include <algorithm>
 using namespace std;
 
+string S[303];
 int main()
 {
 	ios_base::sync_with_stdio(false);
@@ -11,17 +11,16 @@ int main()
 
 	int N, M, K; cin >> N >> M >> K;
 	
-	vector<string> v;
 	for (int i = 0; i < N; i++) {
-		string s; cin >> s;
-		v.push_back(s);
+		cin >> S[i];
+		sort(S[i].begin(), S[i].end());
 	}
 
-	sort(v.begin(), v.end());
+	sort(S, S + N);
 
 	string ans = "";
 	for (int i = 0; i < K; i++)
-		ans += v[i];
+		ans += S[i];
 
 	sort(ans.begin(), ans.end());
 	cout << ans;
