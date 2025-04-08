@@ -1,0 +1,6 @@
+w=float(input())
+h=float(input())
+c=w/(h*h)
+if c>25:print("Overweight")
+elif 18.5<c<=25.0:print("Normal weight")
+else:print("Underweight")
