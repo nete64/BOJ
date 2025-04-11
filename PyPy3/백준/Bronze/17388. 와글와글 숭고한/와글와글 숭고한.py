@@ -1,0 +1,6 @@
+S,K,H=map(int,input().split())
+r=min(S,K,H)
+if S+K+H>=100:print("OK")
+elif r==S:print("Soongsil")
+elif r==K:print("Korea")
+else:print("Hanyang")
