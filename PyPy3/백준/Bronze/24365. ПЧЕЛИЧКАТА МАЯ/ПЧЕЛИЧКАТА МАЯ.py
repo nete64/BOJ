@@ -1,0 +1,16 @@
+a,b,c=map(int,input().split())
+r=(a+b+c)//3
+s=0
+t=max(0,min(r-a,b-r))
+s+=t
+a+=t
+b-=t
+t=max(0,min(r-b,c-r))
+s+=t
+b+=t
+c-=t
+t=max(0,min(r-a,c-r))
+s+=2*t
+a+=t
+c-=t
+print(s)
