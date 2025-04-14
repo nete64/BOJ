@@ -1,0 +1,6 @@
+a,b=map(int,input().split())
+c,d=map(int,input().split())
+e=a*3+b-(c*3+d)
+if e>0:print(1, e)
+elif e<0:print(2, -e)
+else:print("NO SCORE")
