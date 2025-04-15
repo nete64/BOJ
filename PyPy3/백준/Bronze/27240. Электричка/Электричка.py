@@ -1,0 +1,5 @@
+n,a,b=map(int,input().split())
+s,t=map(int,input().split())
+if (s<=a and t<=a) or (s>=b and t>=b):print("Outside")
+elif a<s<b and a<t<b:print("City")
+else:print("Full")
