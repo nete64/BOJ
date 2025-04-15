@@ -1,0 +1,5 @@
+a=input()
+b=input()
+x=abs(ord(b[0])-ord(a[0]))
+y=abs(ord(b[1])-ord(a[1]))
+print(f"{min(x,y)} {max(x,y)}")
