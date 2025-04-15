@@ -1,0 +1,21 @@
+import sys
+input = sys.stdin.readline
+
+N=int(input())
+for i in range(N):print(" @@@   @@@  ",end='')
+print()
+for i in range(N):print("@   @ @   @ ",end='')
+print()
+for i in range(N):print("@    @    @ ",end='')
+print()
+for i in range(N):print("@         @ ",end='')
+print()
+for i in range(N):print(" @       @  ",end='')
+print()
+for i in range(N):print("  @     @   ",end='')
+print()
+for i in range(N):print("   @   @    ",end='')
+print()
+for i in range(N):print("    @ @     ",end='')
+print()
+for i in range(N):print("     @      ",end='')
