@@ -1,0 +1,7 @@
+a,b=map(str,input().split())
+x=int(a)
+if b=="miss":print(0)
+elif b=="bad":print(x*200)
+elif b=="cool":print(x*400)
+elif b=="great":print(x*600)
+elif b=="perfect":print(x*1000)
