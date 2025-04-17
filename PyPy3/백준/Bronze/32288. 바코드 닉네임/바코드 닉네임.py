@@ -1,0 +1,5 @@
+n=int(input())
+s=input()
+s=s.replace("l","L")
+s=s.replace("I","i")
+print(s)
