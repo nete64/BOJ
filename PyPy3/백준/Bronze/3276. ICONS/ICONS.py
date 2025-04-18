@@ -1,3 +1,4 @@
 import math
 N=int(input())
-print(math.ceil(N**0.5), math.ceil(N/math.ceil(N**0.5)))
+r=math.ceil(N**0.5)
+print(r,math.ceil(N/r))
