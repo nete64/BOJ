@@ -24,12 +24,11 @@ int main()
         cin >> arr[i].i >> arr[i].a >> arr[i].b >> arr[i].c;
 
     sort(arr, arr + N, cmp);
-
     int r = 1;
     int x = arr[0].a, y = arr[0].b, z = arr[0].c;
-    for (int i = 1; i < N; i++) {
+    for (int i = 0; i < N; i++) {
         if (!(arr[i].a == x && arr[i].b == y && arr[i].c == z)) {
-            r++;
+            r = i + 1;
             x = arr[i].a;
             y = arr[i].b;
             z = arr[i].c;
